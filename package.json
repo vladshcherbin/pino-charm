@@ -1,0 +1,35 @@
+{
+  "name": "pino-charm",
+  "description": "Minimal formatter for pino",
+  "version": "0.1.0",
+  "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
+  "repository": "vladshcherbin/pino-charm",
+  "type": "module",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src",
+    "prepublishOnly": "yarn lint && yarn build"
+  },
+  "dependencies": {
+    "pino-abstract-transport": "^1.1.0"
+  },
+  "peerDependencies": {
+    "pino": "^8.19.0"
+  },
+  "devDependencies": {
+    "@shcherbin/eslint-config-node-typescript": "^0.1.1",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.21",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
