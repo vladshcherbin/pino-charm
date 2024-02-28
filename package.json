@@ -5,8 +5,7 @@
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/pino-charm",
   "type": "module",
-  "main": "build/index.js",
-  "module": "build/index.js",
+  "exports": "./build/charm.js",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src",
