@@ -13,10 +13,11 @@ type Chunk = {
   err: SerializedError
   level: number
   msg: string
+  time: number
 }
 
 export default function prettifyChunk(chunk: Chunk) {
-  const { duration, err, level, msg, ...rest } = chunk
+  const { duration, err, level, msg, time, ...rest } = chunk
   const properties = Object.entries(rest)
   const output = []
   const message = []
