@@ -42,12 +42,12 @@ export default function prettifyChunk(chunk: Chunk) {
 
   if (properties.length && canInlineProperties) {
     properties.forEach(([property, value]) => {
-      output.push(`${gray(`${property}:`)} ${white(String(value))}`)
+      message.push(`${gray(`${property}:`)} ${white(String(value))}`)
     })
   }
 
   if (duration !== undefined) {
-    output.push(gray(prettyMilliseconds(duration)))
+    message.push(gray(prettyMilliseconds(duration)))
   }
 
   output.push(message.join(' '))
