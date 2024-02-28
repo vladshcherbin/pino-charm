@@ -13,7 +13,14 @@
     "prepublishOnly": "yarn lint && yarn build"
   },
   "dependencies": {
-    "pino-abstract-transport": "^1.1.0"
+    "clean-stack": "^5.2.0",
+    "colorette": "^2.0.20",
+    "extract-stack": "^3.0.0",
+    "indent-string": "^5.0.0",
+    "is-plain-obj": "^4.1.0",
+    "pino-abstract-transport": "^1.1.0",
+    "pretty-ms": "^9.0.0",
+    "sonic-boom": "^3.8.0"
   },
   "peerDependencies": {
     "pino": "^8.19.0"
@@ -23,6 +30,7 @@
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.21",
     "eslint": "^8.57.0",
+    "pino": "^8.19.0",
     "typescript": "^5.3.3"
   },
   "files": [
