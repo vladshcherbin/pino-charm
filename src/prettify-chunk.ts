@@ -53,10 +53,6 @@ export default function prettifyChunk(chunk: Chunk) {
 
   output.push(message.join(' '))
 
-  if (err) {
-    output.push(gray(extractStack(cleanStack(err.stack, { basePath: process.cwd() }))))
-  }
-
   if (properties.length && !canInlineProperties) {
     properties.forEach(([property, value]) => {
       if (isPlainObject(value)) {
@@ -66,6 +62,10 @@ export default function prettifyChunk(chunk: Chunk) {
         output.push(indentString(`${gray(`${property}:`)} ${white(String(value))}`, 2))
       }
     })
+  }
+
+  if (err) {
+    output.push(gray(extractStack(cleanStack(err.stack, { basePath: process.cwd() }))))
   }
 
   return output.join('\n')
