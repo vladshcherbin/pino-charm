@@ -63,7 +63,7 @@ export default function prettifyChunk(chunk: Chunk) {
         output.push(indentString(gray(`${property}:`), 2))
         output.push(indentString(inspect(value, { compact: false, depth: null, sorted: true }), 4))
       } else {
-        output.push(indentString(`${gray(`${property}:`)} ${white(String(value))}`), 2)
+        output.push(indentString(`${gray(`${property}:`)} ${white(String(value))}`, 2))
       }
     })
   }
