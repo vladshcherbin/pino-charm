@@ -21,7 +21,8 @@ export default function prettifyChunk(chunk: Chunk) {
   const properties = Object.entries(rest)
   const output = []
   const message = []
-  const canInlineProperties = properties.length <= 3
+  const canInlineProperties = !err
+    && properties.length <= 3
     && !properties.some(([, value]) => isPlainObject(value))
 
   message.push(colorizeLevel(level)('>'))
