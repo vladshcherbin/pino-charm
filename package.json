@@ -22,7 +22,7 @@
     "sonic-boom": "^4.0.1"
   },
   "peerDependencies": {
-    "pino": "^8.19.0"
+    "pino": "8 || 9"
   },
   "devDependencies": {
     "@shcherbin/eslint-config-node-typescript": "^0.2.0",
