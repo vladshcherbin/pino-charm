@@ -17,20 +17,20 @@
     "extract-stack": "^3.0.0",
     "indent-string": "^5.0.0",
     "is-plain-obj": "^4.1.0",
-    "pino-abstract-transport": "^1.1.0",
+    "pino-abstract-transport": "^1.2.0",
     "pretty-ms": "^9.0.0",
-    "sonic-boom": "^3.8.0"
+    "sonic-boom": "^4.0.1"
   },
   "peerDependencies": {
     "pino": "^8.19.0"
   },
   "devDependencies": {
-    "@shcherbin/eslint-config-node-typescript": "^0.1.1",
-    "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20.11.21",
+    "@shcherbin/eslint-config-node-typescript": "^0.2.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
-    "pino": "^8.19.0",
-    "typescript": "^5.3.3"
+    "pino": "^9.1.0",
+    "typescript": "^5.4.5"
   },
   "files": [
     "build"
