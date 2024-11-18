@@ -1,19 +1,27 @@
-/* eslint-disable no-restricted-syntax */
 import { once } from 'node:events'
+import type { SerializedError } from 'pino'
 import build from 'pino-abstract-transport'
-import { SonicBoom } from 'sonic-boom'
-import prettifyChunk from './prettify-chunk.js'
+import boom from 'sonic-boom'
+import prettify from './prettify.js'
+
+type Chunk = {
+  level: number
+  time: number
+  msg?: string
+  err?: SerializedError
+}
 
 export default async function charm() {
-  const destination = new SonicBoom({ dest: 1 })
+  // eslint-disable-next-line import/no-named-as-default-member
+  const destination = new boom.SonicBoom({ dest: 1, sync: false })
 
   await once(destination, 'ready')
 
   return build(async (source) => {
     for await (const chunk of source) {
-      const toDrain = destination.write(`${prettifyChunk(chunk)}\n`)
+      const writeSucceeded = destination.write(`${prettify(chunk as Chunk)}\n`)
 
-      if (!toDrain) {
+      if (!writeSucceeded) {
         await once(destination, 'drain')
       }
     }
