@@ -32,7 +32,7 @@ export default function prettify(chunk: Chunk) {
 
   if (err) {
     message.push(styleText(['redBright'], `${err.type}: ${err.message}`))
-  } else if (typeof msg === 'string') {
+  } else if (typeof msg !== 'undefined') {
     message.push(formatMessage(msg, level))
   }
 
