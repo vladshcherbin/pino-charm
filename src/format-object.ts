@@ -9,13 +9,13 @@ export default function formatObject(object: object | unknown[]) {
       // eslint-disable-next-line @typescript-eslint/switch-exhaustiveness-check
       switch (type) {
         case 'Punctuator':
-          return styleText('gray', value)
+          return styleText(['gray'], value)
         case 'NumericLiteral':
-          return styleText('yellowBright', value)
+          return styleText(['yellowBright'], value)
         case 'StringLiteral':
-          return styleText('greenBright', value)
+          return styleText(['greenBright'], value)
         case 'IdentifierName':
-          return styleText('white', value)
+          return styleText(['white'], value)
         default:
           return value
       }

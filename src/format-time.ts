@@ -6,5 +6,5 @@ const formatter = new Intl.DateTimeFormat('en-US', {
 })
 
 export default function formatTime(time: number) {
-  return styleText('gray', formatter.format(new Date(time)))
+  return styleText(['gray'], formatter.format(new Date(time)))
 }

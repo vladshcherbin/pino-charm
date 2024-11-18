@@ -31,14 +31,14 @@ export default function prettify(chunk: Chunk) {
   ]
 
   if (err) {
-    message.push(styleText('redBright', `${err.type}: ${err.message}`))
+    message.push(styleText(['redBright'], `${err.type}: ${err.message}`))
   } else if (typeof msg === 'string') {
     message.push(formatMessage(msg, level))
   }
 
   if (properties.length && canInlineProperties) {
     properties.forEach(([property, value]) => {
-      message.push(`${styleText('gray', property)} ${styleText('white', String(value))}`)
+      message.push(`${styleText(['gray'], property)} ${styleText(['white'], String(value))}`)
     })
   }
 
@@ -47,10 +47,10 @@ export default function prettify(chunk: Chunk) {
   if (properties.length && !canInlineProperties) {
     properties.forEach(([property, value]) => {
       if (Array.isArray(value) || isPlainObject(value)) {
-        output.push(redent(styleText('gray', property), 2))
-        output.push(redent(formatObject(value), 1, { indent: styleText('gray', '· '.padStart(4)) }))
+        output.push(redent(styleText(['gray'], property), 2))
+        output.push(redent(formatObject(value), 1, { indent: styleText(['gray'], '· '.padStart(4)) }))
       } else {
-        output.push(redent(`${styleText('gray', property)} ${styleText('white', String(value))}`, 2))
+        output.push(redent(`${styleText(['gray'], property)} ${styleText(['white'], String(value))}`, 2))
       }
     })
   }
