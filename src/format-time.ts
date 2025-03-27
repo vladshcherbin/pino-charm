@@ -1,8 +1,8 @@
 import { styleText } from 'node:util'
 
 const formatter = new Intl.DateTimeFormat('en-US', {
-  timeStyle: 'medium',
-  hour12: false
+  hour12: false,
+  timeStyle: 'medium'
 })
 
 export default function formatTime(time: number) {

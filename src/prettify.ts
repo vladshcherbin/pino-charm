@@ -12,7 +12,7 @@ type Chunk = {
   [key: string]: unknown
   err?: SerializedError
   hostname?: string
-  level: number
+  level: number | string
   msg?: string
   pid?: number
   time: number

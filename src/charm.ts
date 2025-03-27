@@ -5,10 +5,10 @@ import boom from 'sonic-boom'
 import prettify from './prettify.js'
 
 type Chunk = {
-  level: number
-  time: number
-  msg?: string
   err?: SerializedError
+  level: number | string
+  msg?: string
+  time: number
 }
 
 export default async function charm() {
