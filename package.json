@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "prepublishOnly": "yarn lint && yarn build"
+    "prepublishOnly": "pnpm lint && pnpm build"
   },
   "dependencies": {
     "clean-stack": "^5.2.0",
