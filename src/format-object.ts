@@ -1,5 +1,5 @@
-import { inspect, styleText } from 'node:util'
 import jsTokens from 'js-tokens'
+import { inspect, styleText } from 'node:util'
 
 export default function formatObject(object: object | unknown[]) {
   const string = inspect(object, { depth: null, sorted: true })

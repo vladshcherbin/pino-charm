@@ -4,7 +4,8 @@ import build from 'pino-abstract-transport'
 import boom from 'sonic-boom'
 import prettify from './prettify.js'
 
-type Chunk = {
+interface Chunk {
+  [key: string]: unknown
   err?: SerializedError
   level: number | string
   msg?: string
@@ -12,7 +13,7 @@ type Chunk = {
 }
 
 export default async function charm() {
-  // eslint-disable-next-line import/no-named-as-default-member
+  // eslint-disable-next-line import-x/no-named-as-default-member
   const destination = new boom.SonicBoom({ dest: 1, sync: false })
 
   await once(destination, 'ready')

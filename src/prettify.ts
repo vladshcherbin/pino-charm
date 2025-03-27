@@ -1,5 +1,5 @@
-import { styleText } from 'node:util'
 import isPlainObject from 'is-plain-obj'
+import { styleText } from 'node:util'
 import type { SerializedError } from 'pino'
 import redent from 'redent'
 import formatErrorStack from './format-error-stack.js'
@@ -8,7 +8,7 @@ import formatMessage from './format-message.js'
 import formatObject from './format-object.js'
 import formatTime from './format-time.js'
 
-type Chunk = {
+interface Chunk {
   [key: string]: unknown
   err?: SerializedError
   hostname?: string
