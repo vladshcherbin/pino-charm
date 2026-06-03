@@ -1,6 +1,6 @@
 {
   "name": "pino-charm",
-  "description": "Minimal formatter for pino",
+  "description": "Minimal pino formatter",
   "version": "0.4.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/pino-charm",
@@ -35,7 +35,8 @@
     "typescript": "^6.0.3"
   },
   "files": [
-    "dist"
+    "dist",
+    "readme.md"
   ],
   "keywords": [
     "pino",
