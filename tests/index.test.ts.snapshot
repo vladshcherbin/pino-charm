@@ -1,0 +1,59 @@
+exports[`Errors > Cause 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:170:18)\\u001b[39m\\n\\u001b[91m      [cause]: Error: Rejection\\u001b[39m\\n\\u001b[90m        at TestContext.<anonymous> (tests/index.test.ts:170:54)\\u001b[39m\\n"
+`;
+
+exports[`Errors > Direct 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown user\\u001b[39m\\n\\u001b[91m  Error: Unknown user\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:149:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:144:1\\u001b[39m\\n"
+`;
+
+exports[`Errors > Structured 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown payment\\u001b[39m\\n\\u001b[91m  Error: Unknown payment\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:158:25)\\u001b[39m\\n"
+`;
+
+exports[`Levels > Debug 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[94mDBG\\u001b[39m\\u001b[22m Application started\\n"
+`;
+
+exports[`Levels > Error 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mApplication started\\u001b[39m\\n"
+`;
+
+exports[`Levels > Fatal 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[30m\\u001b[41mFTL\\u001b[49m\\u001b[39m\\u001b[22m \\u001b[91mApplication started\\u001b[39m\\n"
+`;
+
+exports[`Levels > Info 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Application started\\n"
+`;
+
+exports[`Levels > Notice 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mNTC\\u001b[39m\\u001b[22m \\u001b[92mApplication started\\u001b[39m\\n"
+`;
+
+exports[`Levels > Trace 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[90mTRC\\u001b[39m\\u001b[22m Application started\\n"
+`;
+
+exports[`Levels > Unknown 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[97mUNK\\u001b[39m\\u001b[22m Application started\\n"
+`;
+
+exports[`Levels > Warn 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[93mWRN\\u001b[39m\\u001b[22m \\u001b[93mApplication started\\u001b[39m\\n"
+`;
+
+exports[`Messages > Null 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m null\\n"
+`;
+
+exports[`Messages > Number 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m 10_000\\n"
+`;
+
+exports[`Messages > String 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Application started\\n"
+`;
+
+exports[`Messages > Structured 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m \\u001b[90mbrand\\u001b[39m \\u001b[37m'Mercedes-Benz'\\u001b[39m \\u001b[90mmodel\\u001b[39m \\u001b[37m'GLC Coupe'\\u001b[39m \\u001b[90monSale\\u001b[39m \\u001b[37mtrue\\u001b[39m \\u001b[90mprice\\u001b[39m \\u001b[37m130_000\\u001b[39m\\n  \\u001b[90mcontacts\\u001b[39m \\u001b[37m{\\n    phone: '+123'\\n  }\\u001b[39m\\n  \\u001b[90mmultimedia\\u001b[39m \\u001b[37m[\\n    'aux',\\n    'usb'\\n  ]\\u001b[39m\\n"
+`;
