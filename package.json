@@ -37,6 +37,15 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "pino",
+    "color",
+    "format",
+    "pretty",
+    "minimal",
+    "transport",
+    "colada"
+  ],
   "engines": {
     "node": ">= 22"
   },
