@@ -12,30 +12,22 @@
     "prepublishOnly": "pnpm lint && pnpm build"
   },
   "dependencies": {
-    "clean-stack": "^5.2.0",
+    "clean-stack": "^6.0.0",
     "extract-stack": "^3.0.0",
-    "is-plain-obj": "^4.1.0",
-    "js-tokens": "^9.0.1",
-    "pino-abstract-transport": "^2.0.0",
+    "pino-abstract-transport": "^3.0.0",
     "redent": "^4.0.0",
-    "sonic-boom": "^4.2.0"
+    "sonic-boom": "^5.0.0"
   },
   "peerDependencies": {
-    "pino": ">= 9"
+    "pino": "^10.3.1"
   },
   "devDependencies": {
-    "@shcherbin/eslint-config": "^0.16.0",
-    "@tsconfig/node22": "^22.0.1",
-    "@types/node": "^22.13.14",
-    "eslint": "9.23.0",
-    "pino": "^9.6.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+    "@shcherbin/eslint-config-node": "^0.6.0",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.1",
+    "pino": "^10.3.1",
+    "tsdown": "^0.22.1",
+    "typescript": "^6.0.3"
   },
   "files": [
     "build"

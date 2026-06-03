@@ -1,8 +1,13 @@
 {
-  "extends": "@tsconfig/node22",
   "compilerOptions": {
-    "outDir": "build",
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "noEmit": true,
     "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "types": ["node"],
     "verbatimModuleSyntax": true
-  }
+  },
+  "include": ["./src/**/*.ts", "./tests/*.ts"]
 }
