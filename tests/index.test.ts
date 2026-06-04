@@ -189,6 +189,7 @@ await describe('Options', async () => {
     const logger = pino({ ...options, nestedKey: 'context' }, transport)
 
     logger.info({ port: 3000, time: true }, 'Server started')
+    logger.warn('Retrying request...')
     logger.error(new Error('Unknown brand'))
 
     assert.snapshot(await readFile(destination, 'utf-8'))
