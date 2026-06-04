@@ -12,8 +12,9 @@ export interface Object extends Record<PropertyKey, unknown> {
   time: number
 }
 
-interface Options {
+export interface Options {
   destination?: number | string
+  nestedKey?: string
   sync?: boolean
 }
 
@@ -27,7 +28,7 @@ export default async function charm(options: Options = {}) {
 
   return build(async (source) => {
     for await (const object of source) {
-      const toDrain = !destination.write(`${prettify(object as Object)}\n`)
+      const toDrain = !destination.write(`${prettify(object as Object, options)}\n`)
 
       if (toDrain) {
         await once(destination, 'drain')

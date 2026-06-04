@@ -38,6 +38,10 @@ logger.warn({ duration: 1200, path: '/users' }, 'Slow request')
 logger.error(new Error('Database connection failed'))
 ```
 
+## Best practices
+
+A few small things that make logs nicer to read:
+
 ### Error causes
 
 Use pino's `errWithCause` serializer to show the `cause` field for errors.
@@ -53,6 +57,26 @@ const logger = pino({
     target: 'pino-charm'
   }
 })
+```
+
+### Nested context
+
+Use `nestedKey` to keep application fields separate from pino's own fields. This helps avoid collisions with keys like `time`, `level`, `msg` or `err`, while keeping the formatted output clean.
+
+```ts
+import pino from 'pino'
+
+const logger = pino({
+  nestedKey: 'context',
+  transport: {
+    target: 'pino-charm',
+    options: {
+      nestedKey: 'context'
+    }
+  }
+})
+
+logger.info({ port: 3000, time: true }, 'Server started')
 ```
 
 ## Inspiration

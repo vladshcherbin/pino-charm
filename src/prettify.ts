@@ -1,14 +1,15 @@
 import { inspect } from 'node:util'
 import redent from 'redent'
-import type { Object } from './index.ts'
+import type { Object, Options } from './index.ts'
 import formatEntry from './formatters/entry.ts'
 import formatError from './formatters/error.ts'
 import formatLevel from './formatters/level.ts'
 import formatMessage from './formatters/message.ts'
 import formatTime from './formatters/time.ts'
+import parseObject from './utilities/parse-object.ts'
 
-export default function prettify(object: Object) {
-  const { err, hostname, level, msg, pid, time, ...rest } = object
+export default function prettify(object: Object, options: Options) {
+  const { context, error, level, msg, time } = parseObject(object, options)
   const output: string[] = []
   const message: string[] = [
     formatTime(time),
@@ -19,7 +20,7 @@ export default function prettify(object: Object) {
     message.push(formatMessage(object))
   }
 
-  const properties = Object.entries(rest)
+  const properties = Object.entries(context)
   const structuredProperties = new Map<string, string>()
 
   if (properties.length) {
@@ -47,8 +48,8 @@ export default function prettify(object: Object) {
     })
   }
 
-  if (typeof err !== 'undefined') {
-    output.push(...formatError(err))
+  if (typeof error !== 'undefined') {
+    output.push(...formatError(error))
   }
 
   return output.join('\n')

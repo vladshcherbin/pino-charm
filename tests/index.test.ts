@@ -182,3 +182,15 @@ await describe('Errors', async () => {
     assert.snapshot(await readFile(destination, 'utf-8'))
   })
 })
+
+await describe('Options', async () => {
+  await test('Nested key', async ({ assert }) => {
+    const transport = await charm({ destination, nestedKey: 'context', sync: true })
+    const logger = pino({ ...options, nestedKey: 'context' }, transport)
+
+    logger.info({ port: 3000, time: true }, 'Server started')
+    logger.error(new Error('Unknown brand'))
+
+    assert.snapshot(await readFile(destination, 'utf-8'))
+  })
+})
