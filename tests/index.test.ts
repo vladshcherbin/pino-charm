@@ -171,4 +171,14 @@ await describe('Errors', async () => {
 
     assert.snapshot(await readFile(destination, 'utf-8'))
   })
+
+  await test('Non-error', async ({ assert }) => {
+    const transport = await charm({ destination, sync: true })
+    const logger = pino(options, transport)
+
+    logger.error({ err: 'Unknown brand' })
+    logger.fatal({ err: null })
+
+    assert.snapshot(await readFile(destination, 'utf-8'))
+  })
 })

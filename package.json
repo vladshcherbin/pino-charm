@@ -19,6 +19,7 @@
   "dependencies": {
     "clean-stack": "^6.0.0",
     "extract-stack": "^3.0.0",
+    "is-plain-obj": "^4.1.0",
     "pino-abstract-transport": "^3.0.0",
     "redent": "^4.0.0",
     "sonic-boom": "^5.0.0"

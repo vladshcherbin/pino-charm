@@ -6,6 +6,10 @@ exports[`Errors > Direct 1`] = `
 "\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown user\\u001b[39m\\n\\u001b[91m  Error: Unknown user\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:149:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:144:1\\u001b[39m\\n"
 `;
 
+exports[`Errors > Non-error 1`] = `
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m\\n\\u001b[91m  NonError: 'Unknown brand'\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[30m\\u001b[41mFTL\\u001b[49m\\u001b[39m\\u001b[22m\\n\\u001b[91m  NonError: null\\u001b[39m\\n"
+`;
+
 exports[`Errors > Structured 1`] = `
 "\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown payment\\u001b[39m\\n\\u001b[91m  Error: Unknown payment\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:158:25)\\u001b[39m\\n"
 `;

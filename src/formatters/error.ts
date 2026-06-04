@@ -1,13 +1,20 @@
 import cleanStack from 'clean-stack'
 import extractStack from 'extract-stack'
 import { cwd } from 'node:process'
-import { styleText } from 'node:util'
+import { inspect, styleText } from 'node:util'
 import redent from 'redent'
 import type { Object } from '../index.ts'
+import isPinoLikeError from '../utilities/is-pino-like-error.ts'
 
 const basePath = cwd()
 
-export default function formatError(error: NonNullable<Object['err']>, indent = 2, fromCause = false) {
+export default function formatError(error: Exclude<Object['err'], undefined>, indent = 2, fromCause = false) {
+  if (!isPinoLikeError(error)) {
+    const message = inspect(error, { breakLength: Infinity, numericSeparator: true, sorted: true })
+
+    return [styleText('redBright', redent(`NonError: ${message}`, indent))]
+  }
+
   const message = `${error.type}: ${error.message}`
   const stack = cleanStack(extractStack(error.stack), { basePath, pretty: true })
 

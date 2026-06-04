@@ -47,7 +47,7 @@ export default function prettify(object: Object) {
     })
   }
 
-  if (err) {
+  if (typeof err !== 'undefined') {
     output.push(...formatError(err))
   }
 

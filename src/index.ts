@@ -1,15 +1,10 @@
-import type { SerializedError as IncorrectSerializedError } from 'pino'
 import { once } from 'node:events'
 import build from 'pino-abstract-transport'
 import SonicBoom from 'sonic-boom'
 import prettify from './prettify.ts'
 
-interface SerializedError extends Pick<IncorrectSerializedError, 'message' | 'stack' | 'type'> {
-  cause?: SerializedError
-}
-
 export interface Object extends Record<PropertyKey, unknown> {
-  err?: SerializedError
+  err?: unknown
   hostname?: string
   level: number | string
   msg?: unknown
