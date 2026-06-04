@@ -1,5 +1,5 @@
-import { styleText } from 'node:util'
 import type { Object } from '../index.ts'
+import styleText from '../utilities/style-text.ts'
 
 export default function formatLevel(level: Object['level']) {
   switch (level) {

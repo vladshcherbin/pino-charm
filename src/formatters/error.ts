@@ -1,10 +1,11 @@
 import cleanStack from 'clean-stack'
 import extractStack from 'extract-stack'
 import { cwd } from 'node:process'
-import { inspect, styleText } from 'node:util'
+import { inspect } from 'node:util'
 import redent from 'redent'
 import type { Object } from '../index.ts'
 import isPinoLikeError from '../utilities/is-pino-like-error.ts'
+import styleText from '../utilities/style-text.ts'
 
 const basePath = cwd()
 
