@@ -1,9 +1,9 @@
 exports[`Errors > Cause 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:170:18)\\u001b[39m\\n\\u001b[91m      [cause]: Error: Rejection\\u001b[39m\\n\\u001b[90m        at TestContext.<anonymous> (tests/index.test.ts:170:54)\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:161:18)\\u001b[39m\\n\\u001b[91m      [cause]: Error: Rejection\\u001b[39m\\n\\u001b[90m        at TestContext.<anonymous> (tests/index.test.ts:161:54)\\u001b[39m\\n"
 `;
 
 exports[`Errors > Direct 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown user\\u001b[39m\\n\\u001b[91m  Error: Unknown user\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:149:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:144:1\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown user\\u001b[39m\\n\\u001b[91m  Error: Unknown user\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:140:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:135:1\\u001b[39m\\n"
 `;
 
 exports[`Errors > Non-error 1`] = `
@@ -11,7 +11,7 @@ exports[`Errors > Non-error 1`] = `
 `;
 
 exports[`Errors > Structured 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown payment\\u001b[39m\\n\\u001b[91m  Error: Unknown payment\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:158:25)\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown payment\\u001b[39m\\n\\u001b[91m  Error: Unknown payment\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:149:25)\\u001b[39m\\n"
 `;
 
 exports[`Levels > Debug 1`] = `
@@ -28,10 +28,6 @@ exports[`Levels > Fatal 1`] = `
 
 exports[`Levels > Info 1`] = `
 "\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Application started\\n"
-`;
-
-exports[`Levels > Notice 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mNTC\\u001b[39m\\u001b[22m \\u001b[92mApplication started\\u001b[39m\\n"
 `;
 
 exports[`Levels > Trace 1`] = `
@@ -63,5 +59,5 @@ exports[`Messages > Structured 1`] = `
 `;
 
 exports[`Options > Nested key 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Server started \\u001b[90mport\\u001b[39m \\u001b[37m3_000\\u001b[39m \\u001b[90mtime\\u001b[39m \\u001b[37mtrue\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[93mWRN\\u001b[39m\\u001b[22m \\u001b[93mRetrying request...\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:193:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:186:1\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Server started \\u001b[90mport\\u001b[39m \\u001b[37m3_000\\u001b[39m \\u001b[90mtime\\u001b[39m \\u001b[37mtrue\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[93mWRN\\u001b[39m\\u001b[22m \\u001b[93mRetrying request...\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:184:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:177:1\\u001b[39m\\n"
 `;

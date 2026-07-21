@@ -8,9 +8,6 @@ export default function formatMessage({ level, msg }: Object) {
     : inspect(msg, { breakLength: Infinity, numericSeparator: true, sorted: true })
 
   switch (level) {
-    case 35:
-    case 'notice':
-      return styleText('greenBright', message)
     case 40:
     case 'warn':
       return styleText('yellowBright', message)

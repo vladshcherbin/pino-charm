@@ -72,15 +72,6 @@ await describe('Levels', async () => {
     assert.snapshot(await readFile(destination, 'utf-8'))
   })
 
-  await test('Notice', async ({ assert }) => {
-    const transport = await charm({ destination, sync: true })
-    const logger = pino({ base: { pid: 69 }, customLevels: { notice: 35 } }, transport)
-
-    logger.notice('Application started')
-
-    assert.snapshot(await readFile(destination, 'utf-8'))
-  })
-
   await test('Unknown', async ({ assert }) => {
     const transport = await charm({ destination, sync: true })
     const logger = pino({ base: { pid: 69 }, customLevels: { random: 45 } }, transport)

@@ -12,9 +12,6 @@ export default function formatLevel(level: Object['level']) {
     case 30:
     case 'info':
       return styleText(['bold', 'greenBright'], 'INF')
-    case 35:
-    case 'notice':
-      return styleText(['bold', 'greenBright'], 'NTC')
     case 40:
     case 'warn':
       return styleText(['bold', 'yellowBright'], 'WRN')
