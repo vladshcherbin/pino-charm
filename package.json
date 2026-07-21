@@ -1,7 +1,7 @@
 {
   "name": "pino-charm",
   "description": "Minimal pino formatter",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": {
     "type": "git",
