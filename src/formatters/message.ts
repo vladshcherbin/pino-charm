@@ -5,7 +5,7 @@ import styleText from '../utilities/style-text.ts'
 export default function formatMessage({ level, msg }: Object) {
   const message = typeof msg === 'string'
     ? msg
-    : inspect(msg, { breakLength: Infinity, numericSeparator: true, sorted: true })
+    : inspect(msg, { breakLength: Infinity, sorted: true })
 
   switch (level) {
     case 40:

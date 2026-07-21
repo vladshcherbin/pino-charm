@@ -11,7 +11,7 @@ const basePath = cwd()
 
 export default function formatError(error: Exclude<Object['err'], undefined>, indent = 2, fromCause = false) {
   if (!isPinoLikeError(error)) {
-    const message = inspect(error, { breakLength: Infinity, numericSeparator: true, sorted: true })
+    const message = inspect(error, { breakLength: Infinity, sorted: true })
 
     return [styleText('redBright', redent(`NonError: ${message}`, indent))]
   }

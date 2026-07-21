@@ -28,7 +28,6 @@ export default function prettify(object: Object, options: Options) {
       const formattedValue = inspect(value, {
         compact: false,
         depth: Infinity,
-        numericSeparator: true,
         sorted: true
       })
 

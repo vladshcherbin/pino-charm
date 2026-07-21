@@ -47,7 +47,7 @@ exports[`Messages > Null 1`] = `
 `;
 
 exports[`Messages > Number 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m 10_000\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m 10000\\n"
 `;
 
 exports[`Messages > String 1`] = `
@@ -55,9 +55,9 @@ exports[`Messages > String 1`] = `
 `;
 
 exports[`Messages > Structured 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m \\u001b[90mbrand\\u001b[39m \\u001b[37m'Mercedes-Benz'\\u001b[39m \\u001b[90mmodel\\u001b[39m \\u001b[37m'GLC Coupe'\\u001b[39m \\u001b[90monSale\\u001b[39m \\u001b[37mtrue\\u001b[39m \\u001b[90mprice\\u001b[39m \\u001b[37m130_000\\u001b[39m\\n  \\u001b[90mcontacts\\u001b[39m \\u001b[37m{\\n    phone: '+123'\\n  }\\u001b[39m\\n  \\u001b[90mmultimedia\\u001b[39m \\u001b[37m[\\n    'aux',\\n    'usb'\\n  ]\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m \\u001b[90mbrand\\u001b[39m \\u001b[37m'Mercedes-Benz'\\u001b[39m \\u001b[90mmodel\\u001b[39m \\u001b[37m'GLC Coupe'\\u001b[39m \\u001b[90monSale\\u001b[39m \\u001b[37mtrue\\u001b[39m \\u001b[90mprice\\u001b[39m \\u001b[37m130000\\u001b[39m\\n  \\u001b[90mcontacts\\u001b[39m \\u001b[37m{\\n    phone: '+123'\\n  }\\u001b[39m\\n  \\u001b[90mmultimedia\\u001b[39m \\u001b[37m[\\n    'aux',\\n    'usb'\\n  ]\\u001b[39m\\n"
 `;
 
 exports[`Options > Nested key 1`] = `
-"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Server started \\u001b[90mport\\u001b[39m \\u001b[37m3_000\\u001b[39m \\u001b[90mtime\\u001b[39m \\u001b[37mtrue\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[93mWRN\\u001b[39m\\u001b[22m \\u001b[93mRetrying request...\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:184:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:177:1\\u001b[39m\\n"
+"\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[92mINF\\u001b[39m\\u001b[22m Server started \\u001b[90mport\\u001b[39m \\u001b[37m3000\\u001b[39m \\u001b[90mtime\\u001b[39m \\u001b[37mtrue\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[93mWRN\\u001b[39m\\u001b[22m \\u001b[93mRetrying request...\\u001b[39m\\n\\u001b[90m17:35:28\\u001b[39m \\u001b[1m\\u001b[91mERR\\u001b[39m\\u001b[22m \\u001b[91mUnknown brand\\u001b[39m\\n\\u001b[91m  Error: Unknown brand\\u001b[39m\\n\\u001b[90m    at TestContext.<anonymous> (tests/index.test.ts:184:18)\\n    at async Promise.all (index 0)\\n    at async tests/index.test.ts:177:1\\u001b[39m\\n"
 `;
