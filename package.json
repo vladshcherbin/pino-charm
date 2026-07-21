@@ -3,7 +3,10 @@
   "description": "Minimal pino formatter",
   "version": "0.6.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
-  "repository": "vladshcherbin/pino-charm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladshcherbin/pino-charm.git"
+  },
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
